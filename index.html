@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Escolar - Colégio Inovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-logo">
+                <img src="imagens/logo.png" alt="Logo Escola" onerror="this.style.display='none'">
+                <div class="brand-name">
+                    <h1>Colégio Inovação</h1>
+                    <span>Sistema de Gestão Escolar (EduDash)</span>
+                </div>
+            </div>
+            <div class="header-info">
+                <span id="data-atual">📅 Data: 12/08/2026</span>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#inicio">🏠 <span>Início</span></a></li>
+                    <li><a href="#alunos">👨‍🎓 <span>Alunos</span></a></li>
+                    <li><a href="#professores">👩‍🏫 <span>Professores</span></a></li>
+                    <li><a href="#turmas">📚 <span>Turmas</span></a></li>
+                    <li><a href="#horarios">⏰ <span>Horários</span></a></li>
+                    <li><a href="#biblioteca">📖 <span>Biblioteca</span></a></li>
+                    <li><a href="#financeiro">💰 <span>Financeiro</span></a></li>
+                    <li><a href="#configuracoes">⚙️ <span>Configurações</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <section class="banner-section">
+                <div class="banner-content">
+                    <h2>Bem-vindo ao Dashboard Escolar</h2>
+                    <p>Acompanhe o desempenho, indicativos e avisos em tempo real.</p>
+                </div>
+            </section>
+
+            <section class="cards-grid">
+                <div class="card border-blue">
+                    <div class="card-icon">👨‍🎓</div>
+                    <div class="card-data">
+                        <h3>850</h3>
+                        <p>Alunos</p>
+                    </div>
+                </div>
+
+                <div class="card border-green">
+                    <div class="card-icon">👩‍🏫</div>
+                    <div class="card-data">
+                        <h3>48</h3>
+                        <p>Professores</p>
+                    </div>
+                </div>
+
+                <div class="card border-purple">
+                    <div class="card-icon">📚</div>
+                    <div class="card-data">
+                        <h3>32</h3>
+                        <p>Turmas</p>
+                    </div>
+                </div>
+
+                <div class="card border-orange">
+                    <div class="card-icon">📖</div>
+                    <div class="card-data">
+                        <h3>5.420</h3>
+                        <p>Livros</p>
+                    </div>
+                </div>
+
+                <div class="card border-yellow">
+                    <div class="card-icon">🏆</div>
+                    <div class="card-data">
+                        <h3>15</h3>
+                        <p>Eventos</p>
+                    </div>
+                </div>
+
+                <div class="card border-red">
+                    <div class="card-icon">💻</div>
+                    <div class="card-data">
+                        <h3>6</h3>
+                        <p>Laboratórios</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content-grid">
+                
+                <section class="panel table-panel">
+                    <h2>📋 Relatório de Alunos Recentes</h2>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Matrícula</th>
+                                    <th>Nome</th>
+                                    <th>Turma</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2026001</td>
+                                    <td>Ana Clara Souza</td>
+                                    <td>3º Ano A</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026002</td>
+                                    <td>Bruno Henrique Lima</td>
+                                    <td>3º Ano B</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026003</td>
+                                    <td>Carla Mendes Santos</td>
+                                    <td>2º Ano A</td>
+                                    <td><span class="badge status-pendente">Pendente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026004</td>
+                                    <td>Diego Oliveira</td>
+                                    <td>1º Ano B</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026005</td>
+                                    <td>Eduarda Ribeiro</td>
+                                    <td>3º Ano A</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026006</td>
+                                    <td>Felipe Gabriel Rocha</td>
+                                    <td>2º Ano B</td>
+                                    <td><span class="badge status-inativo">Inativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026007</td>
+                                    <td>Gabriela Martins</td>
+                                    <td>1º Ano A</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026008</td>
+                                    <td>Heitor Alves</td>
+                                    <td>3º Ano B</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026009</td>
+                                    <td>Isabela Fernandez</td>
+                                    <td>2º Ano A</td>
+                                    <td><span class="badge status-ativo">Ativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026010</td>
+                                    <td>João Pedro Carvalho</td>
+                                    <td>1º Ano B</td>
+                                    <td><span class="badge status-pendente">Pendente</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <div class="side-panels">
+                    
+                    <section class="panel">
+                        <h2>📢 Avisos da Escola</h2>
+                        <ul class="avisos-list">
+                            <li class="aviso-item urgente">
+                                <strong>🚨 Início das Provas Bimestrais</strong>
+                                <p>As avaliações começam na próxima segunda-feira. Fiquem atentos aos horários!</p>
+                            </li>
+                            <li class="aviso-item destaque">
+                                <strong>🎉 Festa Junina Escolar</strong>
+                                <p>Abertura das vendas de ingressos para a família a partir do dia 15.</p>
+                            </li>
+                            <li class="aviso-item">
+                                <strong>👨‍👩‍👧‍👦 Reunião de Pais e Mestres</strong>
+                                <p>Encontro agendado para o final do mês no auditório principal.</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="panel">
+                        <h2>📅 Calendário de Eventos</h2>
+                        <ul class="eventos-list">
+                            <li>
+                                <span class="data-badge">05/08</span>
+                                <span class="evento-nome">Feira de Ciências</span>
+                            </li>
+                            <li>
+                                <span class="data-badge">12/08</span>
+                                <span class="evento-nome">Campeonato Escolar</span>
+                            </li>
+                            <li>
+                                <span class="data-badge">18/08</span>
+                                <span class="evento-nome">Simulado ENEM</span>
+                            </li>
+                            <li>
+                                <span class="data-badge">25/08</span>
+                                <span class="evento-nome">Conselho de Classe</span>
+                            </li>
+                            <li>
+                                <span class="data-badge">30/08</span>
+                                <span class="evento-nome">Encerramento do Bimestre</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p><strong>Desenvolvido por:</strong> Seu Nome Completo | <strong>Turma:</strong> 3º Ano A | <strong>Disciplina:</strong> Desenvolvimento Web | <strong>Ano:</strong> 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
